@@ -236,9 +236,10 @@ class Journal(AnalyticMixin):
         lines = []
         if self.analytics and self.analytic_accounts:
             for account in self.analytic_accounts.accounts:
-                analytic_line = self.get_analytic_line_template(move, line)
-                analytic_line.account = account
-                lines.append(analytic_line)
+                if line.account.deferral:
+                    analytic_line = self.get_analytic_line_template(move, line)
+                    analytic_line.account = account
+                    lines.append(analytic_line)
         return lines
 
     def delete_analytic_lines(self, move):
