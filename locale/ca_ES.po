@@ -1,0 +1,19 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:account.journal,analytic_accounts:"
+msgid "Analytic Accounts"
+msgstr "Comptes analítics"
+
+msgctxt "field:account.journal,analytics:"
+msgid "Analytics On Balance Accounts"
+msgstr "Afegir comptes analítiques"
+
+msgctxt "field:analytic_account.line,account_account:"
+msgid "Move Line Account"
+msgstr "Compte d'apunt"
+
+msgctxt "field:analytic_account.line,from_journal:"
+msgid "Line created from Journal"
+msgstr "Línea creada des de diari"
